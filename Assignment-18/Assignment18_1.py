@@ -1,0 +1,26 @@
+def main() :
+
+	ListNum = list()
+
+	print("Number of Elements :- ")
+	No = int(input())
+
+	print(f"Enter {No} Elements :- ")
+	for i in range (0,No,1) :
+		ListNum.append(int(input()))
+
+	Ret = SumNum(ListNum)
+
+	print(f"Sum of given numbers is {Ret}.")
+
+def SumNum(Numbers) :
+
+	Sum = 0
+
+	for No in Numbers :
+		Sum = Sum + No
+
+	return Sum
+
+if __name__ == "__main__" :
+	main ()
